@@ -30,15 +30,16 @@ Proceso PR:
   git remote -v ; puedo ver mis remotes
   git remote add angelmoya https://github.com/angelmoya/helpdesk-1.git ; añado mi remote
 - podría hacer directamente clone de mi proyecto, pero no viene mal tener los dos remotes
+- tengo que crear una rama con otro nombre
+  git checkout -b webinar_20200325_01
 - despues de modificar o añadir código tengo que comitear mis cambios.
   git add .
   git commit -am "IMP ..."
 - ahora subo los cambios a la rama de mi repositorio
-  git push angelmoya webinar_20200325 ; pongo angelmoya porque es el nombre de mi remote
+  git push angelmoya webinar_20200325_01 ; pongo angelmoya porque es el nombre de mi remote
 - El PR es como indicamos que queremos subir nuestros cambios al proyecto original,
   - los cambios los hacemos en nuestro proyecto, angelmoya
   - proponermos para subir al proyecto original, aeodoo
   - se hace desde la web:
-    - con el enlace que aparece en consola
     - con el enlace que aparece temporalmente en la web
     - o en pull/crear
